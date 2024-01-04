@@ -1,3 +1,4 @@
+<!-- Gmail like webpage -->
 <div class="main">
   <div class="top-container">
     <div class="sub-top-container">
@@ -18,6 +19,8 @@
           <img class="filter-btn" src="assets/imgs/filter.png" width="34px" (click)="filterBtn()"/>
         </div>
       </div>
+
+      <!-- Date range picker -->
       <mat-form-field>
         <mat-label>Enter a date range</mat-label>
         <mat-date-range-input [rangePicker]="picker">
@@ -27,8 +30,7 @@
         <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-date-range-picker #picker></mat-date-range-picker>
-      </mat-form-field>
-      
+      </mat-form-field> 
     </div>
   </div>
   <div class="bottom-container">
@@ -39,8 +41,9 @@
         <figcaption>Mail</figcaption>
       </button> 
       <ng-container *ngIf="mailTemplate; else noTemplate">
+
+    <!-- creating ng-template -->
         <ng-template #mailTemplate>
-         <!-- <p> Your template content goes here </p> -->
          <div class="template">
             <div class="mail-template">
               <div class="compose">
@@ -125,8 +128,10 @@
 
 
   <div class="right-container">
+        <!-- changing css of emails dynamically on click of read button -->
       <div *ngFor="let email of filteredInbox" class="email-from" [ngClass]="{'bold-text' :!email.read}">
        <div class="email">
+        <!-- Binding data to display -->
         <div class="from-container">
           {{ email.from }}
         </div>

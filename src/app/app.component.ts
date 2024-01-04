@@ -19,6 +19,7 @@ export class AppComponent {
     console.log('Filter BUtton Was clicked')
   }
 
+  // filtering mails based on the date range selected
   onDateRangeSelected() {
     this.filteredInbox = this.inbox.filter((email) =>
       this.isDateInRange(new Date(email.timestamp))
@@ -33,8 +34,6 @@ export class AppComponent {
     return date >= this.selectedStartDate && date <= this.selectedEndDate;
   }
 
-
-
   filterEmails() {
     console.log('Search Term:', this.searchTerm);
     this.filteredInbox = this.inbox.filter((email) =>
@@ -43,6 +42,7 @@ export class AppComponent {
     console.log('Filtered Inbox:', this.filteredInbox);
   }
   
+  // displaying template created
   displayTemplate() {
     this.mailTemplate = !this.mailTemplate;
   }
@@ -56,6 +56,7 @@ export class AppComponent {
     }
   }
 
+  // confirm box for deleting the email
 delete(){
   const agree=confirm("Are you sure you want to delete this mail")
   if(agree){
@@ -99,6 +100,8 @@ meet(){
   console.log('Meet was clicked');
 }
 }
+
+// json objects
 const inbox = [
   {
     "from": "Allwin D'Souza",
@@ -181,5 +184,3 @@ const inbox = [
    "read": false
   }
 ];
-
-// export default inbox;
