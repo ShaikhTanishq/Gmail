@@ -1,0 +1,344 @@
+@mixin btns {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  margin-top: 2%;
+  margin-left: 2%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main {
+  width: 100%;
+  height: 120vh;
+  background-color: #000000ff;
+}
+
+.top-container {
+  width: 100%;
+  height: 8.5%;
+  background: transparent;
+  display: block;
+  position: relative;
+  // border: 1px solid white;
+}
+
+.sub-top-container {
+  width: 99.5%;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  margin-top: 0.5%;
+  // margin-left: 0.5%;
+  background: transparent;
+  align-items: center;
+  //border: 1px solid white;
+}
+
+.main-menu{
+  //     display: inline-block;
+  //     padding: 12px;
+  //     overflow: hidden;
+  //     vertical-align: middle;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  background-color: #26282a;
+  // border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu-img {
+  background-color: white;
+  border-radius: 34px;
+  //  #1f1f1f;
+}
+
+.gmail-img {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  //margin-top: 1%;
+  margin-left: 3%;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+}
+
+.gmail-caption {
+  cursor: pointer;
+  font-size: 27px;
+  color: white;
+  align-items: center;
+  display: block;
+  position: relative;
+  margin-left: 7%;
+}
+
+.search-container {
+  display: block;
+  // float: left;
+  // border: 1px solid white;
+  position: relative;
+  width: 800px;
+  height: 40px;
+  margin-left: 1%;
+  align-items: center;
+}
+
+.search-items {
+  align-items: center;
+  display: block;
+  border: 1px solid white;
+  width: 720px;
+  height: 38px;
+  border-radius: 34px;
+  float: right;
+}
+
+.search-bar {
+  display: flex;
+  float: left;
+  height: 38px;
+  color: white;
+  background-color: #26282a;
+  border: none;
+  border-top-right-radius: 34px;
+  border-bottom-right-radius: 34px;
+  width: 680px;
+}
+
+.search-btn {
+  display: flex;
+  border-radius: 34px;
+  float: left;
+  width: 38px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.filter-btn {
+  float: right;
+  display: flex;
+  border-radius: 34px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  position: absolute;
+  margin-left: 85.5%;
+}
+
+.bottom-container {
+  display: flex;
+  gap: 0px;
+}
+
+.left-container {
+  height: 109.5vh;
+  width: 4.5%;
+  background: transparent;
+  display: block;
+  position: relative;
+  border: none;
+  background-color: #26282a;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  float: left;
+}
+
+.mail-box,
+.chat,
+.meet {
+  margin-top: 5%;
+  margin-left: 15%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.template {
+  background-color: rgb(61, 60, 60);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 10px;
+  z-index: 1;
+  width: 30vh !important;
+  height: 50vh !important;
+  border-radius: 34px;
+}
+
+.compose figcaption,
+.inbox figcaption,
+.starred figcaption,
+.snoozed figcaption,
+.sent figcaption,
+.draft figcaption,
+.more figcaption,
+.label figcaption {
+  margin-left: 10px;
+  margin-top: 1%;
+  float: right;
+  background-color: transparent;
+}
+
+.compose-btn {
+  @include btns;
+}
+
+.mail-template-bottom {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.inbox-btn {
+  @include btns;
+}
+
+.snoozed-btn {
+  @include btns;
+}
+
+.sent-btn {
+  @include btns;
+}
+
+.draft-btn {
+  @include btns;
+}
+
+.more-btn {
+  @include btns;
+}
+
+.starred-btn {
+  @include btns;
+}
+
+.label {
+  margin-top: 5%;
+  @include btns;
+}
+
+.mail-template {
+  width: 50vh;
+  height: 80vh;
+}
+
+.right-container {
+  width: 95.5%;
+  height: 866px;
+  margin-left: 2%;
+  position: relative;
+  overflow: visible;
+  //display: flex;
+  //flex-direction: row;
+  // float: left;
+  //border: 1px solid white;
+}
+
+.from-container {
+  width: 30%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.to-container {
+  width: 70%;
+  margin-bottom: 1%;
+  //border: 1px solid white;
+}
+
+.email {
+  display: flex;
+  float: left;
+  border-radius: 34px;
+  border-bottom-right-radius: 34px;
+  background-color: #26282a;
+  width: 94%;
+  height: 5%;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.delete-mail,
+.read-mail {
+  border-radius: 34px;
+  position: relative;
+  float: right;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-right: 1%;
+}
+
+.email-to {
+  margin-left: 1%;
+  margin-top: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+.email-from {
+  margin-left: 1%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  color: white;
+  cursor: pointer;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.mail-box,
+.chat,
+.meet{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.mail-box:hover,
+.mail-box:focus,
+.mail-box:active,
+.chat:hover,
+.chat:focus,
+.chat:active,
+.meet:hover,
+.meet:focus,
+.meet:active,
+.email:hover,
+.email:active,
+.email:focus{
+  transform: scale(1.1);
+}
+
+
+.mat-datepicker-toggle {
+  color: white;
+}
+
+.mat-form-field-type-mat-date-range-input, .mat-form-field-infix{
+color: white;
+background-color: rgb(80, 79, 79);
+margin-left: 30%;
+border-radius: 10px;
+margin-top: 2%;
+}
